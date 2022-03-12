@@ -18,27 +18,27 @@ const client = new Client({
 client.initialize();
 
 client.on('qr', (qr) => {
-    console.log('QRCode recebido', qr);
+    console.log('zapdasgalaxias.com.br BOT-ZDG QRCode recebido', qr);
 });
 
 client.on('authenticated', () => {
-    console.log('Autenticado');
+    console.log('zapdasgalaxias.com.br BOT-ZDG Autenticado');
 });
 
 client.on('auth_failure', msg => {
-    console.error('Falha na autenticação', msg);
+    console.error('zapdasgalaxias.com.br BOT-ZDG Falha na autenticação', msg);
 });
 
 client.on('ready', () => {
-    console.log('Dispositivo pronto');
+    console.log('zapdasgalaxias.com.br BOT-ZDG Dispositivo pronto');
 });
 
 client.on('change_state', state => {
-    console.log('Status de conexão: ', state );
+    console.log('zapdasgalaxias.com.br BOT-ZDG Status de conexão: ', state );
 });
 
 client.on('disconnected', (reason) => {
-    console.log('Cliente desconectado', reason);
+    console.log('zapdasgalaxias.com.br BOT-ZDG Cliente desconectado', reason);
 });
 
 app.post('/send-message', [
